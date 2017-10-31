@@ -1,16 +1,16 @@
 {
-  "name": "gulp-jsvalidate",
+  "name": "gulp-es5validate",
   "version": "3.0.0",
   "description": "Validate JavaScript code and report possible syntax errors",
   "license": "MIT",
-  "repository": "sindresorhus/gulp-jsvalidate",
+  "repository": "rwhogg/gulp-es5validate",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "scripts": {
     "test": "ava"
@@ -39,10 +39,6 @@
   },
   "devDependencies": {
     "ava": "*",
-    "gulp": "^3.9.1",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
+    "gulp": "^3.9.1"
   }
 }

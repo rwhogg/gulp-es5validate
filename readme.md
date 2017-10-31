@@ -1,6 +1,6 @@
-# gulp-jsvalidate [![Build Status](https://travis-ci.org/sindresorhus/gulp-jsvalidate.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-jsvalidate)
+# gulp-es5validate [![Build Status](https://travis-ci.org/rwhogg/gulp-es5validate.svg?branch=master)](https://travis-ci.org/rwhogg/gulp-es5validate)
 
-> Validate JavaScript code and report possible syntax errors
+> Validate Ecmascript 5 code and report possible syntax errors
 
 ![](screenshot.png)
 
@@ -18,7 +18,7 @@ $ npm install --save-dev gulp-jsvalidate
 
 ```js
 const gulp = require('gulp');
-const jsValidate = require('gulp-jsvalidate');
+const jsValidate = require('gulp-es5validate');
 
 gulp.task('default', () =>
 	gulp.src('app.js')
@@ -30,3 +30,4 @@ gulp.task('default', () =>
 ## License
 
 MIT © [Sindre Sorhus](https://sindresorhus.com)
+Minor changes © [Bob W. Hogg](https://github.com/rwhogg) released under same license
