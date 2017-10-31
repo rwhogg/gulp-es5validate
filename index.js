@@ -1,7 +1,7 @@
 'use strict';
 const gutil = require('gulp-util');
 const through = require('through2');
-const esprima = require('esprima');
+const acorn = require('acorn');
 
 module.exports = () => {
 	return through.obj(function (file, enc, cb) {
@@ -18,7 +18,7 @@ module.exports = () => {
 		let errors;
 
 		try {
-			errors = esprima.parse(file.contents.toString(), {tolerant: true}).errors;
+			errors = acorn.parse(file.contents.toString(), {ecmaVersion: 5}).errors;
 		} catch (err) {
 			this.emit('error', new gutil.PluginError('gulp-jsvalidate', err, {fileName: file.path}));
 		}
