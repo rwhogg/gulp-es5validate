@@ -2,15 +2,13 @@
 
 > Validate Ecmascript 5 code and report possible syntax errors
 
-![](screenshot.png)
-
 The earlier you find syntax errors, the earlier you can fix them.
 
 
 ## Install
 
 ```
-$ npm install --save-dev gulp-jsvalidate
+$ npm install --save-dev gulp-es5validate
 ```
 
 
