@@ -28,4 +28,5 @@ gulp.task('default', () =>
 ## License
 
 MIT © [Sindre Sorhus](https://sindresorhus.com)
+
 Minor changes © [Bob W. Hogg](https://github.com/rwhogg) released under same license
