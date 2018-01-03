@@ -1,7 +1,7 @@
 'use strict';
-const gutil = require('gulp-util');
 const through = require('through2');
 const acorn = require('acorn');
+const PluginError = require('plugin-error');
 
 module.exports = () => {
 	return through.obj(function (file, enc, cb) {
@@ -11,7 +11,7 @@ module.exports = () => {
 		}
 
 		if (file.isStream()) {
-			cb(new gutil.PluginError('gulp-es5validate', 'Streaming not supported'));
+			cb(new PluginError('gulp-es5validate', 'Streaming not supported'));
 			return;
 		}
 
@@ -20,11 +20,11 @@ module.exports = () => {
 		try {
 			errors = acorn.parse(file.contents.toString(), {ecmaVersion: 5}).errors;
 		} catch (err) {
-			this.emit('error', new gutil.PluginError('gulp-es5validate', err, {fileName: file.path}));
+			this.emit('error', new PluginError('gulp-es5validate', err, {fileName: file.path}));
 		}
 
 		if (errors && errors.length > 0) {
-			this.emit('error', new gutil.PluginError('gulp-es5validate', '\n' + errors.join('\n'), {
+			this.emit('error', new PluginError('gulp-es5validate', '\n' + errors.join('\n'), {
 				fileName: file.path,
 				showStack: false
 			}));
