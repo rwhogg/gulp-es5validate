@@ -22,7 +22,6 @@
         "check",
         "lint",
         "parse",
-        "esprima",
         "ast",
         "source",
         "code"
