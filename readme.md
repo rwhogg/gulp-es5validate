@@ -15,12 +15,12 @@ $ npm install --save-dev gulp-es5validate
 ## Usage
 
 ```js
-const gulp = require('gulp');
-const jsValidate = require('gulp-es5validate');
+const gulp = require("gulp");
+const jsValidate = require("gulp-es5validate");
 
-gulp.task('default', () =>
-	gulp.src('app.js')
-		.pipe(jsValidate())
+gulp.task("default", () =>
+    gulp.src("app.js")
+        .pipe(jsValidate());
 );
 ```
 
