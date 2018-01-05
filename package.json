@@ -5,7 +5,7 @@
     "license": "MIT",
     "repository": "rwhogg/gulp-es5validate",
     "engines": {
-        "node": ">=8"
+        "node": ">=6"
     },
     "scripts": {
         "test": "ava"
