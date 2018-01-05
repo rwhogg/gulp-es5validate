@@ -1,39 +1,39 @@
 {
-  "name": "gulp-es5validate",
-  "version": "0.1.0",
-  "description": "Validate Ecmascript 5 code and report possible syntax errors",
-  "license": "MIT",
-  "repository": "rwhogg/gulp-es5validate",
-  "engines": {
-    "node": ">=8"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "gulpplugin",
-    "js",
-    "javascript",
-    "syntax",
-    "errors",
-    "check",
-    "lint",
-    "parse",
-    "esprima",
-    "ast",
-    "source",
-    "code"
-  ],
-  "dependencies": {
-    "acorn": "^5.2.1",
-    "gulp-util": "^3.0.0",
-    "through2": "^2.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "gulp": "^3.9.1"
-  }
+    "name": "gulp-es5validate",
+    "version": "0.2.0",
+    "description": "Validate Ecmascript 5 code and report possible syntax errors",
+    "license": "MIT",
+    "repository": "rwhogg/gulp-es5validate",
+    "engines": {
+        "node": ">=8"
+    },
+    "scripts": {
+        "test": "ava"
+    },
+    "files": [
+        "index.js"
+    ],
+    "keywords": [
+        "gulpplugin",
+        "js",
+        "javascript",
+        "syntax",
+        "errors",
+        "check",
+        "lint",
+        "parse",
+        "ast",
+        "source",
+        "code"
+    ],
+    "dependencies": {
+        "acorn": "^5.2.1",
+        "plugin-error": "^0.1.2",
+        "through2": "^2.0.0"
+    },
+    "devDependencies": {
+        "ava": "*",
+        "gulp": "^3.9.1",
+        "vinyl": "^2.1.0"
+    }
 }
