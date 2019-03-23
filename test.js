@@ -2,7 +2,7 @@ import test from 'ava';
 import Vinyl from 'vinyl';
 import m from '.';
 
-test.cb(t => {
+test.cb("Basic test", t => {
 	t.plan(1);
 
 	const stream = m();
