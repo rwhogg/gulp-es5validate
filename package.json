@@ -32,7 +32,7 @@
         "through2": "^2.0.0"
     },
     "devDependencies": {
-        "ava": "^1.2.1",
+        "ava": "^1.4.1",
         "gulp": "^3.9.1",
         "vinyl": "^2.1.0"
     }
