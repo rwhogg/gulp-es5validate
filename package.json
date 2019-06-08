@@ -5,7 +5,7 @@
     "license": "MIT",
     "repository": "rwhogg/gulp-es5validate",
     "engines": {
-        "node": ">=4"
+        "node": ">=8"
     },
     "scripts": {
         "test": "ava"
@@ -27,13 +27,13 @@
         "code"
     ],
     "dependencies": {
-        "acorn": "^5.2.1",
-        "plugin-error": "^0.1.2",
-        "through2": "^2.0.0"
+        "acorn": "^6.1.1",
+        "plugin-error": "^1.0.1",
+        "through2": "^3.0.1"
     },
     "devDependencies": {
         "ava": "^1.4.1",
-        "gulp": "^3.9.1",
-        "vinyl": "^2.1.0"
+        "gulp": "^4.0.2",
+        "vinyl": "^2.2.0"
     }
 }
